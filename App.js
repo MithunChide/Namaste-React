@@ -16,11 +16,13 @@
     <h1>I am H1 Tag</h1>
     <h2>I am H2 Tag</h2>
     </div></div> */
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const nesteing = React.createElement("div", {id:"parent"}, 
+    const nesteing = React.createElement("div", {id:"parent"}, 
 React.createElement("div", {id:"child"}, [    
-React.createElement("h1", {}, "I am H1 tag"),
-React.createElement("h2", {}, "I am H2 tag")
+React.createElement("h1", {}, "I am Mithun Chide Learning React Js"),
+React.createElement("h2", {}, "I'm so proud of myself")
 ]));
 
  const root = ReactDOM.createRoot(document.getElementById("root"));

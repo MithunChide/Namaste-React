@@ -11,7 +11,7 @@
     <!-- if we have below type of code inside the root div then it will render for milisecond and
      replace by react code which we have created using react -->
         <h1>Mithun is here</h1>
-        <h1>Mithun is here</h1>
+       
     </div>
 
     <!-- hello word using javasrcipt code -->
@@ -24,10 +24,12 @@
     </script> -->
 
 <!-- below are React CDN links which contain all javascript code developed by facebook developer -->
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
 
-<script src="./App.js"></script>
+<script type="module" src="./App.js"></script>
+
+<!-- type= module is used here to resolve "Browser scripts cannot have imports or exports." as it will behave like modules -->
 
 </body>
 </html>

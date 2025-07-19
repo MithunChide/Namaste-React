@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namaste React</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <div id="root">
-    <!-- if we have below type of code inside the root div then it will render for milisecond and
-     replace by react code which we have created using react -->
-        <h1>Mithun is here</h1>
-       
-    </div>
+    <h1>Hello React</h1>
+    <div id="root"></div>
 
-    <!-- hello word using javasrcipt code -->
-    <!-- <script>
-        const heading = document.createElement("h1");
-        heading.innerHTML = "Hello World from javasrcipt";
 
-        const root = document.getElementById("root");
-        root.appendChild(heading);
-    </script> -->
+    <!-- <script src="app.js"></script> -->
 
-<!-- below are React CDN links which contain all javascript code developed by facebook developer -->
-<!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
 
-<script type="module" src="./App.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
-<!-- type= module is used here to resolve "Browser scripts cannot have imports or exports." as it will behave like modules -->
+ <script>
+    const heading = React.createElement("div", {id:'parent'}, [
+        React.createElement('div', {id: 'child'}, [
+        React.createElement('h1', {id:'heading1'}, "Hello Heading 1"),
+        React.createElement('h2', {id:'heading2'}, "Hello Heading 2")
+        ]),
+        React.createElement('div', {id: 'child2'}, [
+        React.createElement('h1', {id:'heading1'}, "Hello Heading 1"),
+        React.createElement('h2', {id:'heading2'}, "Hello Heading 2")
+        ]),git
+    ])
+    const root = ReactDOM.createRoot(document.getElementById('root'));
 
+    root.render(heading)
+ </script>
 </body>
 </html>
